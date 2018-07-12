@@ -1,4 +1,4 @@
-package sample;
+package sample.dispatcher_login;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
