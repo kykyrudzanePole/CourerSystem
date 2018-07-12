@@ -23,4 +23,8 @@ public class RegistrationController {
     @FXML
     private Button back_button;
 
+    @FXML
+    void  initialize(){
+
+    }
 }

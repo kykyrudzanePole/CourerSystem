@@ -37,12 +37,14 @@ public class OfficeController {
                     e.printStackTrace();
                 }
 
-                Parent parent = loader.getRoot();
+                Parent root = loader.getRoot();
                 Stage stage = new Stage();
-                stage.setScene(new Scene(parent));
-                stage.showAndWait();
+                stage.setScene(new Scene(root));
+                stage.show();
             }
         });
     }
+
+
 
 }

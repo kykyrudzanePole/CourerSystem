@@ -1,6 +1,8 @@
 package sample.dispatcher_login;
 
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,7 +21,7 @@ import java.sql.*;
 
 public class Controller {
     @FXML
-    private Label Error;
+    private Label ErrorField;
     @FXML
     private TextField TextField1;
     @FXML
@@ -27,16 +29,19 @@ public class Controller {
     @FXML
     private Button button;
     @FXML
+
     void initialize() {
-        button.setOnAction(event -> {
-            String id = TextField1.getText().trim();
-            String pass = TextField2.getText().trim();
-            if(!id.equals("") && !pass.equals(""))
-            {
-                loginUser(id,pass);
-            }
-            else{
-                System.out.println("ID and password is Empty");
+        button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String id = TextField1.getText().trim();
+                String pass = TextField2.getText().trim();
+                if(!id.equals("") && !pass.equals("")){
+                    loginUser(id,pass);
+                }
+                else{
+                    System.out.println("ID and password is Empty");
+                }
             }
         });
     }
@@ -56,10 +61,11 @@ public class Controller {
         catch (SQLException e){
             e.printStackTrace();
         }
-        if(counter>=1){
+        if(counter >= 1){
             button.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/sample/dispatcher_office/OfficeView.fxml"));
+
             try {
                 loader.load();
             } catch (IOException e) {
@@ -68,13 +74,13 @@ public class Controller {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.showAndWait();
+            stage.show();
+
 
         }
         else{
-            Error.setText("You entered incorrect data, " + "\n" +
-                    "please check back" + "\n" + "and fill out the form again");
-            Error.setTextAlignment(TextAlignment.CENTER);
+            ErrorField.setText("Incorrect ID or password");
+            ErrorField.setTextAlignment(TextAlignment.CENTER);
         }
     }
 }
