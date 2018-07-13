@@ -1,5 +1,9 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+<<<<<<< HEAD
 .body{
+=======
+.body {
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
     -fx-background-image: url(/Images/Background.jpg);
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;

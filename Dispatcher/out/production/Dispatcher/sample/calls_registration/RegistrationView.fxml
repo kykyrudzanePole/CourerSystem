@@ -10,41 +10,73 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="body" stylesheets="@../../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.calls_registration.RegistrationController">
     <children>
+<<<<<<< HEAD
         <Label layoutX="123.0" layoutY="158.0" prefHeight="26.0" prefWidth="124.0" text="Full Name:" underline="true">
+=======
+        <Label layoutX="69.0" layoutY="207.0" prefHeight="26.0" prefWidth="124.0" text="Full Name:" underline="true">
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
             <font>
                 <Font name="System Bold" size="20.0" />
             </font>
         </Label>
+<<<<<<< HEAD
         <Label layoutX="123.0" layoutY="201.0" prefHeight="26.0" prefWidth="124.0" text="Start Adress:" underline="true">
+=======
+        <Label layoutX="69.0" layoutY="250.0" prefHeight="26.0" prefWidth="124.0" text="Start Adress:" underline="true">
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
             <font>
                 <Font name="System Bold" size="20.0" />
             </font>
         </Label>
+<<<<<<< HEAD
         <Label layoutX="123.0" layoutY="240.0" prefHeight="26.0" prefWidth="124.0" text="End Adress:" underline="true">
+=======
+        <Label layoutX="69.0" layoutY="293.0" prefHeight="26.0" prefWidth="124.0" text="End Adress:" underline="true">
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
             <font>
                 <Font name="System Bold" size="20.0" />
             </font>
         </Label>
+<<<<<<< HEAD
         <Label layoutX="123.0" layoutY="283.0" prefHeight="26.0" prefWidth="124.0" text="Phone:" underline="true">
+=======
+        <Label layoutX="69.0" layoutY="331.0" prefHeight="26.0" prefWidth="124.0" text="Phone:" underline="true">
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
             <font>
                 <Font name="System Bold" size="20.0" />
             </font>
         </Label>
+<<<<<<< HEAD
         <TextField fx:id="phone_field" layoutX="262.0" layoutY="282.0" prefHeight="27.0" prefWidth="306.0" />
         <TextField fx:id="startadress_field" layoutX="262.0" layoutY="200.0" prefHeight="27.0" prefWidth="306.0" />
         <TextField fx:id="fullname_field" layoutX="262.0" layoutY="157.0" prefHeight="27.0" prefWidth="306.0" />
         <TextField fx:id="endadress_field" layoutX="262.0" layoutY="239.0" prefHeight="27.0" prefWidth="306.0" />
         <Button fx:id="registrate_button" layoutX="350.0" layoutY="328.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="131.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000;" text="Registrate" textFill="#eb0909">
+=======
+        <TextField fx:id="phone_field" layoutX="212.0" layoutY="330.0" prefHeight="27.0" prefWidth="306.0" />
+        <TextField fx:id="startadress_field" layoutX="213.0" layoutY="250.0" prefHeight="27.0" prefWidth="306.0" />
+        <TextField fx:id="fullname_field" layoutX="213.0" layoutY="206.0" prefHeight="27.0" prefWidth="306.0" />
+        <TextField fx:id="endadress_field" layoutX="212.0" layoutY="292.0" prefHeight="27.0" prefWidth="306.0" />
+        <Button fx:id="registrate_button" layoutX="285.0" layoutY="392.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="131.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000;" text="Registrate" textFill="#eb0909">
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
             <font>
                 <Font name="System Bold" size="20.0" />
             </font>
         </Button>
+<<<<<<< HEAD
         <Label alignment="CENTER" layoutX="262.0" layoutY="68.0" prefHeight="41.0" prefWidth="306.0" text="CALLS REGISTRATION" textFill="#976363">
+=======
+        <Label alignment="CENTER" layoutX="198.0" layoutY="122.0" prefHeight="41.0" prefWidth="306.0" text="CALLS REGISTRATION" textFill="#976363">
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
             <font>
                 <Font name="System Bold" size="24.0" />
             </font>
         </Label>
+<<<<<<< HEAD
         <Button fx:id="back_button" layoutX="7.0" layoutY="328.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="75.0" style="-fx-border-color: black; -fx-background-color: white;" text="Back">
+=======
+        <Button fx:id="back_button" layoutX="14.0" layoutY="389.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="75.0" style="-fx-border-color: black; -fx-background-color: white;" text="Back">
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
@@ -54,5 +86,12 @@
                 <Image url="@../../Images/logo.png" />
             </image>
         </ImageView>
+<<<<<<< HEAD
+=======
+      <Label fx:id="ername_field" layoutX="534.0" layoutY="206.0" prefHeight="27.0" prefWidth="131.0" />
+      <Label fx:id="erstartadress_field" layoutX="534.0" layoutY="250.0" prefHeight="27.0" prefWidth="131.0" />
+      <Label fx:id="erendadress_field" layoutX="534.0" layoutY="293.0" prefHeight="27.0" prefWidth="131.0" />
+      <Label fx:id="erphone_field" layoutX="534.0" layoutY="330.0" prefHeight="27.0" prefWidth="131.0" />
+>>>>>>> 447569152ac8dccd5f0f07cc5e27337533754db5
     </children>
 </AnchorPane>
