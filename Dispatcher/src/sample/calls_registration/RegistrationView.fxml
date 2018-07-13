@@ -30,10 +30,10 @@
                 <Font name="System Bold" size="20.0" />
             </font>
         </Label>
-        <TextField fx:id="startadress_field" layoutX="262.0" layoutY="282.0" prefHeight="27.0" prefWidth="306.0" />
-        <TextField fx:id="phone_field" layoutX="262.0" layoutY="200.0" prefHeight="27.0" prefWidth="306.0" />
-        <TextField fx:id="endadress_field" layoutX="262.0" layoutY="157.0" prefHeight="27.0" prefWidth="306.0" />
-        <TextField fx:id="fullname_field" layoutX="262.0" layoutY="239.0" prefHeight="27.0" prefWidth="306.0" />
+        <TextField fx:id="phone_field" layoutX="262.0" layoutY="282.0" prefHeight="27.0" prefWidth="306.0" />
+        <TextField fx:id="startadress_field" layoutX="262.0" layoutY="200.0" prefHeight="27.0" prefWidth="306.0" />
+        <TextField fx:id="fullname_field" layoutX="262.0" layoutY="157.0" prefHeight="27.0" prefWidth="306.0" />
+        <TextField fx:id="endadress_field" layoutX="262.0" layoutY="239.0" prefHeight="27.0" prefWidth="306.0" />
         <Button fx:id="registrate_button" layoutX="350.0" layoutY="328.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="131.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000;" text="Registrate" textFill="#eb0909">
             <font>
                 <Font name="System Bold" size="20.0" />

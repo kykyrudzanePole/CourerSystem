@@ -32,22 +32,4 @@ public class Dispatcher {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public static class Main extends Application {
-        @Override
-        public void start(Stage primaryStage) {
-            try {
-                Parent root;
-                root = FXMLLoader.load(getClass().getResource("OfficeView.fxml"));
-                primaryStage.setTitle("Dispatcher");
-                primaryStage.setScene(new Scene(root, 700, 400));
-                primaryStage.show();
-            } catch(Exception e) {
-                e.printStackTrace();
-            }
-        }
-        public static void main(String[] args) {
-            launch(args);
-        }
-    }
 }

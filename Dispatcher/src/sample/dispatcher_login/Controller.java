@@ -11,7 +11,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.TextAlignment;
-import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 
@@ -47,7 +46,7 @@ public class Controller {
     }
 
     public void loginUser(String id, String pass){
-        Database db = new Database();
+        Request_dispatchers db = new Request_dispatchers();
         Dispatcher dispatcher = new Dispatcher();
         dispatcher.setID_worker(id);
         dispatcher.setPassword(pass);
