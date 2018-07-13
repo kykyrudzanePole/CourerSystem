@@ -4,8 +4,6 @@ package sample.calls_registration;
     Create constant for columms in table dispatcher_calls
  */
 public class Const {
-    public static final String FULL_NAME = "fullName";
-    public static final String START_ADRESS = "startAdress";
-    public static final String END_ADRESS = "endAdress";
-    public static final String PHONE = "phoneNumber";
+    public static final String DATABASE_NAME = "worker";
+    public static final String USER_TABLE = ".dispatcher_calls";
 }

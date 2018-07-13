@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class Database  {
     // Create connection:
 
-    protected Connection con;
+    Connection con;
     protected Connection getDbConnection() throws ClassNotFoundException, SQLException {
         String url = "jdbc:mysql://127.0.0.1:3306/worker?useSSL=false";
         String user = "root";
