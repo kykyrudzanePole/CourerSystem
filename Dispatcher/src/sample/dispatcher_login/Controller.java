@@ -45,7 +45,7 @@ public class Controller {
         });
     }
 
-    public void loginUser(String id, String pass){
+    private void loginUser(String id, String pass){
         Request_dispatchers db = new Request_dispatchers();
         Dispatcher dispatcher = new Dispatcher();
         dispatcher.setID_worker(id);
