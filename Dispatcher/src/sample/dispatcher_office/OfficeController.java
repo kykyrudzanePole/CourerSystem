@@ -23,9 +23,11 @@ public class OfficeController {
 
     @FXML
     void initialize() {
+        // handle button callsRegistration_button this button open RegistrationView.fxml
         callsRegistration_button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                // Standart procedur to open new window
                 callsRegistration_button.getScene().getWindow().hide();
 
                 FXMLLoader loader = new FXMLLoader();
@@ -43,8 +45,29 @@ public class OfficeController {
                 stage.show();
             }
         });
+
+        /* handle button changeOffice_button this button open sample.fxml
+           we return to the dispatcher login */
+        changeOffice_button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                // Standart procedur to open new window
+                changeOffice_button.getScene().getWindow().hide();
+
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/dispatcher_login/sample.fxml"));
+
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+            }
+        });
     }
-
-
-
 }
