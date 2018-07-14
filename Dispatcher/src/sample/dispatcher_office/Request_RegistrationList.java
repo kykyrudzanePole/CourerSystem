@@ -1,3 +1,4 @@
+/*
 package sample.dispatcher_office;
 
 import sample.Database;
@@ -28,3 +29,4 @@ public class Request_RegistrationList extends Database {
         return rs;
     }
 }
+*/

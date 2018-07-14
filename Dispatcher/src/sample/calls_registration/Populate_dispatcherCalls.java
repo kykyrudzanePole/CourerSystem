@@ -20,13 +20,16 @@ public class Populate_dispatcherCalls extends Database {
     String fullname;
 
     public void populateTable() throws SQLException {
+        long orderID = 1000000;  // create in order to find call using ID
         Statement statement = null;
         try {
             statement = getDbConnection().createStatement();
 
             // write scrip for sql, this scrip write date to the database
             statement.executeUpdate("insert into " + DATABASE_NAME + USER_TABLE +
-                    " values('"+fullname+"', '"+startadress+"', '"+endadress+"', '"+phone+"')");
+                    " values('"+fullname+"', '"+startadress+"', '"+endadress+"', '"+phone+"', '"+orderID+"')");
+
+            orderID++;   // just increment ID
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
