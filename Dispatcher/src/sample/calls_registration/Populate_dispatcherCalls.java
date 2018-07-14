@@ -26,9 +26,9 @@ public class Populate_dispatcherCalls extends Database {
             statement = getDbConnection().createStatement();
 
             // write scrip for sql, this scrip write date to the database
-            statement.executeUpdate("insert into " + DATABASE_NAME + USER_TABLE +
-                    " values('"+fullname+"', '"+startadress+"', '"+endadress+"', '"+phone+"', '"+orderID+"')");
 
+            statement.executeUpdate("insert into " + "worker" + ".dispatcher_calls" +
+                    " values('"+fullname+"', '"+startadress+"', '"+endadress+"', '"+phone+"', '"+orderID+"')");
             orderID++;   // just increment ID
 
         } catch (ClassNotFoundException e) {
