@@ -39,7 +39,7 @@ public class Controller {
                     loginUser(id,pass);
                 }
                 else{
-                    System.out.println("ID and password is Empty");
+                    System.out.println("ID and password is Empty zackhar durak");
                 }
             }
         });
